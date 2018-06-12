@@ -1,0 +1,6 @@
+TEMPLATE="<VirtualHost *:80>
+	ServerName $S_SERVER_NAME
+	DocumentRoot $APACHE_DOCUMENT_ROOT/$S_NAME
+	ErrorLog \${APACHE_LOG_DIR}/$S_NAME/error.logaa
+	CustomLog \${APACHE_LOG_DIR}/$S_NAME/access.log combined
+</VirtualHost>"
